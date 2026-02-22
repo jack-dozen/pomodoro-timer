@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
-
-
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="timer-ring">
+                <svg width="200" height="200">
+                    <circle id="bg-circle" cx="100" cy="100" r="90" />
+                    <circle id="progress-circle" cx="100" cy="100" r="90" />
+                </svg>
+                <span id="timer">25:00</span>
+            </div>
+            <div id="controls">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <button id="theme-btn">Dark/Light</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
